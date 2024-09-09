@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+       .select {
+  width: 100px !important;
+  height: 100px;
+  overflow-y: auto;
+  display: inline-block;
+}
+.select option{
+    padding: 2px 15px;
+}
+#section-to-show {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <form name="submit-to-google-sheet">
+            <div class="form-group">
+              <label for="exampleFormControlInput1">ECP Name :</label>
+              <input name="ECP Name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Shop Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Patient Name :</label>
+                <input name="Patient Name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Patient Name">
+              </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Example select</label>
+              <select name="Brands" class="form-control" id="exampleFormControlSelect1">
+                <option>Hoya</option>
+                <option>Bonzer</option>
+                <option>Acme Contact Lens</option>
+                <option>Johnson & Johnson</option>
+              </select>
+            </div>
+            
+            <div class="row mx-5 my-5">
+            <div class=" col-lg-6 justify-content-between">
+                <h2>Right Eye(DV)</h2>
+            <div class="form-group d-flex">
+                
+            <div class="col-lg-4 d-flex flex-column">
+                <label for="exampleFormControlSelect2">SPH Power</label>
+                <select name="Right SPH(DV)" class="select"  multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>-4</option>
+                    <option>-3</option>
+                    <option>-2</option>
+                    <option>-1</option>
+                    <option>0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+              <div class="col-lg-4 d-flex flex-column">
+                <label for="exampleFormControlSelect2">CYL Power</label>
+                <select name="Right CYL(DV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>-4</option>
+                    <option>-3</option>
+                    <option>-2</option>
+                    <option>-1</option>
+                    <option>0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+              <div class="col-lg-4 d-flex flex-column">
+                <label for="exampleFormControlSelect2">Axis</label>
+                <select name="Right Axis(DV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>-4</option>
+                    <option>-3</option>
+                    <option>-2</option>
+                    <option>-1</option>
+                    <option>0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+            </div>
+            </div>
+
+            
+
+            <div class="col-lg-6 justify-content-between">
+                <h2>Left Eye(DV)</h2>
+            <div class="form-group d-flex">
+            <div class="col-lg-4 d-flex flex-column">
+                <label for="exampleFormControlSelect2">SPH Power</label>
+                <select name="Left SPH(DV)" class="select"  multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>-4</option>
+                    <option>-3</option>
+                    <option>-2</option>
+                    <option>-1</option>
+                    <option>0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+              <div class="col-lg-4 d-flex flex-column">
+                <label for="exampleFormControlSelect2">CYL Power</label>
+                <select name="Left SYL(DV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>-4</option>
+                    <option>-3</option>
+                    <option>-2</option>
+                    <option>-1</option>
+                    <option>0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+              <div class="col-lg-4 d-flex flex-column">
+                <label for="exampleFormControlSelect2">Axis</label>
+                <select name="Left Axis(DV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>-4</option>
+                    <option>-3</option>
+                    <option>-2</option>
+                    <option>-1</option>
+                    <option>0</option>
+                  <option>+1</option>
+                  <option>+2</option>
+                  <option>+3</option>
+                  <option>+4</option>
+                  <option>+5</option>
+                </select>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-5 my-5">
+        <div class=" col-lg-6 justify-content-between">
+            <h2>Right Eye(NV)</h2>
+        <div class="form-group d-flex">
+            
+        <div class="col-lg-4 d-flex flex-column">
+            <label for="exampleFormControlSelect2">SPH Power</label>
+            <select name="Right SPH(NV)" class="select"  multiple class="form-control" id="exampleFormControlSelect2">
+                <option>-4</option>
+                <option>-3</option>
+                <option>-2</option>
+                <option>-1</option>
+                <option>0</option>
+              <option>+1</option>
+              <option>+2</option>
+              <option>+3</option>
+              <option>+4</option>
+              <option>+5</option>
+            </select>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <label for="exampleFormControlSelect2">CYL Power</label>
+            <select name="Right CYL(NV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>-4</option>
+                <option>-3</option>
+                <option>-2</option>
+                <option>-1</option>
+                <option>0</option>
+              <option>+1</option>
+              <option>+2</option>
+              <option>+3</option>
+              <option>+4</option>
+              <option>+5</option>
+            </select>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <label for="exampleFormControlSelect2">Axis</label>
+            <select name="Right Axis(NV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>-4</option>
+                <option>-3</option>
+                <option>-2</option>
+                <option>-1</option>
+                <option>0</option>
+              <option>+1</option>
+              <option>+2</option>
+              <option>+3</option>
+              <option>+4</option>
+              <option>+5</option>
+            </select>
+          </div>
+        </div>
+        </div>
+
+        
+
+        <div class="col-lg-6 justify-content-between">
+            <h2>Left Eye(NV)</h2>
+        <div class="form-group d-flex">
+        <div class="col-lg-4 d-flex flex-column">
+            <label for="exampleFormControlSelect2">SPH Power</label>
+            <select name="Left SPH(NV)" class="select"  multiple class="form-control" id="exampleFormControlSelect2">
+                <option>-4</option>
+                <option>-3</option>
+                <option>-2</option>
+                <option>-1</option>
+                <option>0</option>
+              <option>+1</option>
+              <option>+2</option>
+              <option>+3</option>
+              <option>+4</option>
+              <option>+5</option>
+            </select>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <label for="exampleFormControlSelect2">CYL Power</label>
+            <select name="Left CYL(NV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>-4</option>
+                <option>-3</option>
+                <option>-2</option>
+                <option>-1</option>
+                <option>0</option>
+              <option>+1</option>
+              <option>+2</option>
+              <option>+3</option>
+              <option>+4</option>
+              <option>+5</option>
+            </select>
+          </div>
+          <div class="col-lg-4 d-flex flex-column">
+            <label for="exampleFormControlSelect2">Axis</label>
+            <select name="Left Axis(NV)" class="select" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>-4</option>
+                <option>-3</option>
+                <option>-2</option>
+                <option>-1</option>
+                <option>0</option>
+              <option>+1</option>
+              <option>+2</option>
+              <option>+3</option>
+              <option>+4</option>
+              <option>+5</option>
+            </select>
+          </div>
+        </div>
+    </div>
+</div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Remarks</label>
+              <textarea name="Remarks" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <!-- google form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz9Dvkdk8K7oblQkPYGE8yw-EOJlAgKq2Pj_Dik9aOFi1Ui8eGTlG2Qd8ax4pBe5tk/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML=`Message sent successfully <i class="fa fa-solid fa-thumbs-up"></i>`
+            setTimeout(function(){
+                msg.innerHTML="";
+            },3000)
+            form.reset();
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
